@@ -7,6 +7,11 @@
     <meta name="description" content="Blog page for all bass nerds" />
     <title>My Personal Blog Website</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -19,12 +24,10 @@
           </ul>
         </nav>
       </div>
-      <div class="headline">
-        <h1>Welcome to Bass Heaven</h1>
-      </div>
+      <h1 class="heading-one">Welcome to Bass Heaven</h1>
     </header>
     <main>
-      <h2>Recent Posts</h2>
+      <h2 class="heading-two">Recent Posts</h2>
       <section class="card-container">
         <div class="card">
           <img
@@ -35,10 +38,13 @@
           <div class="card-content">
             <h3>My Fender Pbass</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-              nostrum expedita molestiae qui necessitatibus voluptatum, quos,
-              dolores aliquid illo dolore at vel unde molestias, magni soluta
-              perferendis. Id, perferendis quae.
+              Lorem ipsum dolor, sit amet adipisicing elit.
+              <em>
+                Minus nostrum expedita molestiae qui necessitatibus voluptatum,
+                quos, dolores aliquid illo dolore at vel unde molestias, magni
+                soluta perferendis
+              </em>
+              Id, perferendis quae.
             </p>
           </div>
           <div class="container-btn">
@@ -110,6 +116,27 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <!-- Bass Quote -->
+
+      <section>
+        <h2 class="heading-two">Favorite Bass Quote</h2>
+        <!-- <div class="quote-container"> -->
+        <figure class="quote-container">
+          <img
+            src="./assets/images/bass-player.jpeg"
+            alt="Bass Player playing on a Gibson Thunderbird"
+          />
+          <figcaption>Bass Player playing on a Gibson Thunderbird</figcaption>
+          <q class="home-quote"
+            >Guitar is for the head, drums are for the chest, but bass gets you
+            in the groin</q
+          >
+          <p>~ Suzi Quatro</p>
+        </figure>
+
+        <!-- </div> -->
       </section>
     </main>
     <footer class="footer-container">

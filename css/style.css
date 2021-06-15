@@ -20,7 +20,7 @@ body {
 
 /* Blog Post Cards */
 
-.card-grid {
+.card-container {
   display: grid;
   max-width: 1000px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -84,6 +84,7 @@ body {
 
 .nav-menu {
   display: flex;
+  padding: 0;
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
@@ -146,7 +147,7 @@ body {
 }
 
 @media (min-width: 1100px) {
-  .card-grid {
+  .card-container {
     margin: auto;
   }
 }

@@ -22,7 +22,7 @@ body {
 
 .card-container {
   display: grid;
-  max-width: 1000px;
+  max-width: 1920px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -144,6 +144,12 @@ body {
   .footer-container > a:first-of-type {
     margin: 0 0 0 20px;
   }
+
+  .quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -175,7 +181,7 @@ h3 {
 figure > img {
   max-width: 100%;
   border-radius: 10px;
-  margin: 0 0 5px 0;
+  margin: 16px 0 16px 0;
 }
 
 figcaption {
@@ -217,3 +223,20 @@ figcaption {
   width: -moz-fit-content;
   width: fit-content;
 }
+
+/* Blog Post Page Grid */
+
+.blogcontent-wrapper {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+
+/* .author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  border: 2px solid black;
+} */

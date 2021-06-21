@@ -1,0 +1,77 @@
+/* Tablet Size */
+
+@media screen and (min-width: 576px) {
+  .main-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      'header header header header header header header header'
+      'main main main main main main main main'
+      'footer footer footer footer footer footer footer footer';
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-icons:hover {
+    width: 50px;
+    padding: 2px;
+  }
+
+  /* Nested Grid on Blogpage */
+
+  .blog-page-content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 'aut aut aut blog blog blog blog blog';
+  }
+  .author-info {
+    grid-area: aut;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .blogpost-container {
+    grid-area: blog;
+  }
+}
+
+/* Desktop Size */
+
+@media screen and (min-width: 1200px) {
+  .main-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      'header header header header header header header header header header header header'
+      'main main main main main main main main main main main main'
+      'footer footer footer footer footer footer footer footer footer footer footer footer';
+  }
+
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  /* Nested Grid on Blogpage */
+
+  .blog-page-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 'aut aut aut blog blog blog blog blog blog blog blog blog';
+  }
+  .author-info {
+    grid-area: aut;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .blogpost-container {
+    grid-area: blog;
+  }
+}

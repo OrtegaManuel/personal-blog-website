@@ -1,6 +1,6 @@
-@import '/css/text.css';
-@import '/css/main-grid.css';
-@import '/css/breakpoints.css';
+@import './text.css';
+@import './main-grid.css';
+@import './breakpoints.css';
 
 :root {
   --light-orange: #ffa270;
